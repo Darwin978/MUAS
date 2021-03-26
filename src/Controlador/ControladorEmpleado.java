@@ -61,7 +61,10 @@ public class ControladorEmpleado {
         vista.getTxtCargo_Act().addKeyListener(kcara);
         vista.getTxtSueldo().addKeyListener(ks);
         vista.getTxtSueldo_ACT().addKeyListener(ksa);
-
+        vista.getTxtCedula1().addKeyListener(kced);
+        vista.getTxtCedula_Act().addKeyListener(kceda);
+        
+        
     }
 
     private void grabarEmpleado() {
@@ -603,4 +606,44 @@ public class ControladorEmpleado {
               
             }
          };
+          KeyListener kced = new KeyListener() {
+            @Override
+            public void keyTyped(KeyEvent ke) {
+                char Celular_PN = ke.getKeyChar();
+        if ((Celular_PN < '0' | Celular_PN > '9') | (vista.getTxtCedula1().getText().length() >= 10)) {
+            ke.consume();
+        }
+            }
+
+            @Override
+            public void keyPressed(KeyEvent ke) {
+
+            }
+
+            @Override
+            public void keyReleased(KeyEvent ke) {
+                
+            }
+
+        };
+          KeyListener kceda = new KeyListener() {
+            @Override
+            public void keyTyped(KeyEvent ke) {
+                char Celular_PN = ke.getKeyChar();
+        if ((Celular_PN < '0' | Celular_PN > '9') | (vista.getTxtCedula_Act().getText().length() >= 10)) {
+            ke.consume();
+        }
+            }
+
+            @Override
+            public void keyPressed(KeyEvent ke) {
+
+            }
+
+            @Override
+            public void keyReleased(KeyEvent ke) {
+                
+            }
+
+        };
 }

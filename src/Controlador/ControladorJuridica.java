@@ -180,7 +180,7 @@ public class ControladorJuridica {
         String idSeleccion = "";
         int fila = vista.getTabla_juridica().getSelectedRow();
         if (fila == -1) {
-            JOptionPane.showMessageDialog(vista, "Debe seleccionar una fila");
+            JOptionPane.showMessageDialog(vista, "Debe seleccionar una fila por favor");
         } else {
             JTable tabla = vista.getTabla_juridica();
             idSeleccion = tabla.getValueAt(tabla.getSelectedRow(), 1).toString();

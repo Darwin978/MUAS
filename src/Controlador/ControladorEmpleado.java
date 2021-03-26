@@ -25,6 +25,8 @@ import javax.xml.ws.Holder;
  *
  * @author MarcoVi
  */
+
+//Prueba 20000 Git
 public class ControladorEmpleado {
      Conexion conecta = new Conexion();
     private ModeloEmpleado modelo;

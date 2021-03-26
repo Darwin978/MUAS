@@ -27,7 +27,7 @@ import sun.swing.table.DefaultTableCellHeaderRenderer;
  * @author MarcoVi
  */
 
-//Buenas
+
 public class ControladorJuridica {
     Conexion conecta = new Conexion();
     private ModeloJuridica modelo;
